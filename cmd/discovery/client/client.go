@@ -2,24 +2,23 @@ package client
 
 import (
 	"encoding/json"
-	"errors"
 	"fmt"
 	"os"
 	"time"
 
 	"github.com/jaypipes/ghw/pkg/block"
 	"github.com/kairos-io/go-tpm"
-	"github.com/kairos-io/kairos/pkg/machine"
+	config "github.com/kairos-io/kairos/pkg/config"
 	"github.com/kairos-io/kcrypt/pkg/bus"
 	"github.com/mudler/go-pluggable"
-	"gopkg.in/yaml.v1"
 )
 
-// If this file exists, it will be used as configuration
-const DefaultConfigLocation = "/oem/kcrypt-challenger.conf"
+const DefaultConfigLocation = "/oem"
 
 type Config struct {
-	Server string `yaml:"challenger_server"`
+	Kcrypt struct {
+		Server string `yaml:"challenger_server"`
+	}
 }
 
 type Client struct {
@@ -68,12 +67,12 @@ func (c *Client) Start() error {
 
 func (c *Client) waitPass(p *block.Partition, attempts int) (pass string, err error) {
 	for tries := 0; tries < attempts; tries++ {
-		if c.Config.Server == "" {
+		if c.Config.Kcrypt.Server == "" {
 			err = fmt.Errorf("no server configured")
 			continue
 		}
 
-		pass, err = c.getPass(c.Config.Server, p)
+		pass, err = c.getPass(c.Config.Kcrypt.Server, p)
 		if pass != "" || err == nil {
 			return pass, err
 		}
@@ -102,49 +101,19 @@ func (c *Client) getPass(server string, partition *block.Partition) (string, err
 	return "", fmt.Errorf("pass for partition not found")
 }
 
-// Combines configuration from cmdline, environment variables and the
-// DefaultConfigLocation file into one struct.
-func GetConfiguration(configFile string) (Config, error) {
-	result := Config{}
+// Reads configuration from `/oem` the same way kairos agent and kairos
+// provider do. Only the `kcrypt` section is taken into account here.
+func GetConfiguration(configDir string) (Config, error) {
+	var result Config
 
-	if err := getConfigurationFromCmdLine(&result); err != nil {
+	c, err := config.Scan(config.Directories([]string{configDir}...))
+	if err != nil {
 		return result, err
 	}
-	getConfigurationFromEnv(&result)
-	if err := getConfigurationFromFile(&result, configFile); err != nil {
+
+	if err = c.Unmarshal(&result); err != nil {
 		return result, err
 	}
 
 	return result, nil
-}
-
-func getConfigurationFromCmdLine(c *Config) error {
-	// best-effort
-	d, err := machine.DotToYAML("/proc/cmdline")
-	if err != nil {
-		return err
-	}
-	err = yaml.Unmarshal(d, c)
-	if err != nil {
-		return err
-	}
-	return nil
-}
-
-func getConfigurationFromEnv(c *Config) {
-	if os.Getenv("WSS_SERVER") != "" {
-		c.Server = os.Getenv("WSS_SERVER")
-	}
-}
-
-func getConfigurationFromFile(c *Config, configFile string) error {
-	confData, err := os.ReadFile(configFile)
-	if errors.Is(err, os.ErrNotExist) {
-		return nil
-	}
-	if err != nil {
-		return err
-	}
-
-	return yaml.Unmarshal(confData, &c)
 }

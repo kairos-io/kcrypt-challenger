@@ -15,28 +15,22 @@ var _ = Describe("Client", func() {
 	Describe("GetConfiguration", func() {
 		var expectedServer string
 
-		When("environment variable is set", func() {
-			BeforeEach(func() {
-				expectedServer = "myserver.org"
-				GinkgoT().Setenv("WSS_SERVER", expectedServer)
-			})
-			It("respects the environment variable", func() {
-				c, err := client.GetConfiguration("")
-				Expect(err).ToNot(HaveOccurred())
-				Expect(c.Server).To(Equal(expectedServer))
-			})
-		})
-
-		When("kcrypt-challenger.conf is present", func() {
-			var filePath string
+		When("kcrypt section is defined in config", func() {
+			var tempDir, filePath string
 
 			BeforeEach(func() {
 				expectedServer = "myserver.org"
-				tempDir := GinkgoT().TempDir()
-				filePath = path.Join(tempDir, "kcrypt-challenger.conf")
+				tempDir = GinkgoT().TempDir()
+				filePath = path.Join(tempDir, "kcrypt-challenger.yaml")
 				content := fmt.Sprintf(`
----
-challenger_server: %s
+#cloud-init
+
+# Irrelevant configuration, just to make sure it would be ignored
+kairos:
+  network_token: test
+
+kcrypt:
+  challenger_server: %s
 `, expectedServer)
 				os.WriteFile(
 					filePath,
@@ -44,10 +38,10 @@ challenger_server: %s
 					0744)
 			})
 
-			It("respects the config file", func() {
-				c, err := client.GetConfiguration(filePath)
+			It("respects the config", func() {
+				c, err := client.GetConfiguration(tempDir)
 				Expect(err).ToNot(HaveOccurred())
-				Expect(c.Server).To(Equal(expectedServer))
+				Expect(c.Kcrypt.Server).To(Equal(expectedServer))
 			})
 		})
 	})
