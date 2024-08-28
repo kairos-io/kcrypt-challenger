@@ -15,7 +15,7 @@ require (
 	github.com/mudler/go-processmanager v0.0.0-20230818213616-f204007f963c
 	github.com/mudler/yip v1.9.4
 	github.com/onsi/ginkgo/v2 v2.20.2
-	github.com/onsi/gomega v1.34.1
+	github.com/onsi/gomega v1.34.2
 	github.com/pkg/errors v0.9.1
 	github.com/spectrocloud/peg v0.0.0-20240405075800-c5da7125e30f
 	gopkg.in/yaml.v3 v3.0.1
