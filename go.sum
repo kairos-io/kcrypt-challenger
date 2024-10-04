@@ -546,6 +546,8 @@ github.com/mudler/go-processmanager v0.0.0-20230818213616-f204007f963c h1:CI5uGw
 github.com/mudler/go-processmanager v0.0.0-20230818213616-f204007f963c/go.mod h1:gY3wyrhkRySJtmtI/JPt4a2mKv48h/M9pEZIW+SjeC0=
 github.com/mudler/yip v1.9.4 h1:yaiPKWG5kt/DTNCf7ZGfyWdb1j5c06zYqWF3F+SVKsE=
 github.com/mudler/yip v1.9.4/go.mod h1:nqf8JFCq7a7rIkm7cSs+SOc8QbiyvVJ/xLbUw4GgzFs=
+github.com/mudler/yip v1.11.0 h1:h+npjzSKM9VbShHxa+ywWZzpGIolKvN/e2FOT+rxKkI=
+github.com/mudler/yip v1.11.0/go.mod h1:gwH7iGcr1Jimox2xKtN2AprEO00GzY7smvuycqCL7+Y=
 github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 h1:C3w9PqII01/Oq1c1nUAm88MOHcQC9l5mIlSMApZMrHA=
 github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822/go.mod h1:+n7T8mK8HuQTcFwEeznm/DIxMOiR9yIdICNftLE1DvQ=
 github.com/mwitkow/go-conntrack v0.0.0-20161129095857-cc309e4a2223/go.mod h1:qRWi+5nqEBWmkhHvq77mSJWrCKwh8bxhgT7d/eI7P4U=
