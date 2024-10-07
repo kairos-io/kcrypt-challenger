@@ -127,6 +127,8 @@ github.com/containerd/console v1.0.3 h1:lIr7SlA5PxZyMV30bDW0MGbiOPXwc63yRuCP0ARu
 github.com/containerd/console v1.0.3/go.mod h1:7LqA/THxQ86k76b8c/EMSiaJ3h1eZkMkXar0TQ1gf3U=
 github.com/containerd/containerd v1.7.20 h1:Sl6jQYk3TRavaU83h66QMbI2Nqg9Jm6qzwX57Vsn1SQ=
 github.com/containerd/containerd v1.7.20/go.mod h1:52GsS5CwquuqPuLncsXwG0t2CiUce+KsNHJZQJvAgR0=
+github.com/containerd/containerd v1.7.22 h1:nZuNnNRA6T6jB975rx2RRNqqH2k6ELYKDZfqTHqwyy0=
+github.com/containerd/containerd v1.7.22/go.mod h1:e3Jz1rYRUZ2Lt51YrH9Rz0zPyJBOlSvB3ghr2jbVD8g=
 github.com/containerd/continuity v0.4.2 h1:v3y/4Yz5jwnvqPKJJ+7Wf93fyWoCB3F5EclWG023MDM=
 github.com/containerd/continuity v0.4.2/go.mod h1:F6PTNCKepoxEaXLQp3wDAjygEnImnZ/7o4JzpodfroQ=
 github.com/containerd/errdefs v0.1.0 h1:m0wCRBiu1WJT/Fr+iOoQHMQS/eP5myQ8lCv4Dz5ZURM=
@@ -165,10 +167,14 @@ github.com/distribution/reference v0.6.0 h1:0IXCQ5g4/QMHHkarYzh5l+u8T3t73zM5Qvfr
 github.com/distribution/reference v0.6.0/go.mod h1:BbU0aIcezP1/5jX/8MP0YiH4SdvB5Y4f/wlDRiLyi3E=
 github.com/docker/cli v24.0.0+incompatible h1:0+1VshNwBQzQAx9lOl+OYCTCEAD8fKs/qeXMx3O0wqM=
 github.com/docker/cli v24.0.0+incompatible/go.mod h1:JLrzqnKDaYBop7H2jaqPtU4hHvMKP+vjCwu2uszcLI8=
+github.com/docker/cli v27.1.1+incompatible h1:goaZxOqs4QKxznZjjBWKONQci/MywhtRv2oNn0GkeZE=
+github.com/docker/cli v27.1.1+incompatible/go.mod h1:JLrzqnKDaYBop7H2jaqPtU4hHvMKP+vjCwu2uszcLI8=
 github.com/docker/distribution v2.8.2+incompatible h1:T3de5rq0dB1j30rp0sA2rER+m322EBzniBPB6ZIzuh8=
 github.com/docker/distribution v2.8.2+incompatible/go.mod h1:J2gT2udsDAN96Uj4KfcMRqY0/ypR+oyYUYmja8H+y+w=
 github.com/docker/docker v27.1.1+incompatible h1:hO/M4MtV36kzKldqnA37IWhebRA+LnqqcqDja6kVaKY=
 github.com/docker/docker v27.1.1+incompatible/go.mod h1:eEKB0N0r5NX/I1kEveEz05bcu8tLC/8azJZsviup8Sk=
+github.com/docker/docker v27.3.1+incompatible h1:KttF0XoteNTicmUtBO0L2tP+J7FGRFTjaEF4k6WdhfI=
+github.com/docker/docker v27.3.1+incompatible/go.mod h1:eEKB0N0r5NX/I1kEveEz05bcu8tLC/8azJZsviup8Sk=
 github.com/docker/docker-credential-helpers v0.7.0 h1:xtCHsjxogADNZcdv1pKUHXryefjlVRqWqIhk/uXJp0A=
 github.com/docker/docker-credential-helpers v0.7.0/go.mod h1:rETQfLdHNT3foU5kuNkFR1R1V12OJRRO5lzt2D1b5X0=
 github.com/docker/go-connections v0.4.0 h1:El9xVISelRB7BuFusrZozjnkIM5YnzCViNKohAFqRJQ=
@@ -304,6 +310,8 @@ github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
 github.com/google/go-containerregistry v0.20.1 h1:eTgx9QNYugV4DN5mz4U8hiAGTi1ybXn0TPi4Smd8du0=
 github.com/google/go-containerregistry v0.20.1/go.mod h1:YCMFNQeeXeLF+dnhhWkqDItx/JSkH01j1Kis4PsjzFI=
+github.com/google/go-containerregistry v0.20.2 h1:B1wPJ1SN/S7pB+ZAimcciVD+r+yV/l/DSArMxlbwseo=
+github.com/google/go-containerregistry v0.20.2/go.mod h1:z38EKdKh4h7IP2gSfUUqEvalZBqs6AoLeWfUy34nQC8=
 github.com/google/go-sev-guest v0.4.1 h1:IjxtGAvzR+zSyAqMc1FWfYKCg1cwPkBly9+Xog3YMZc=
 github.com/google/go-sev-guest v0.4.1/go.mod h1:UEi9uwoPbLdKGl1QHaq1G8pfCbQ4QP0swWX4J0k6r+Q=
 github.com/google/go-tpm v0.1.2-0.20190725015402-ae6dd98980d4/go.mod h1:H9HbmUG2YgV/PHITkO7p6wxEEj/v5nlsVWIwumwH2NI=
@@ -420,6 +428,8 @@ github.com/itchyny/timefmt-go v0.1.6 h1:ia3s54iciXDdzWzwaVKXZPbiXzxxnv1SPGFfM/my
 github.com/itchyny/timefmt-go v0.1.6/go.mod h1:RRDZYC5s9ErkjQvTvvU7keJjxUYzIISJGxm9/mAERQg=
 github.com/jaypipes/ghw v0.12.0 h1:xU2/MDJfWmBhJnujHY9qwXQLs3DBsf0/Xa9vECY0Tho=
 github.com/jaypipes/ghw v0.12.0/go.mod h1:jeJGbkRB2lL3/gxYzNYzEDETV1ZJ56OKr+CSeSEym+g=
+github.com/jaypipes/ghw v0.13.0 h1:log8MXuB8hzTNnSktqpXMHc0c/2k/WgjOMSUtnI1RV4=
+github.com/jaypipes/ghw v0.13.0/go.mod h1:In8SsaDqlb1oTyrbmTC14uy+fbBMvp+xdqX51MidlD8=
 github.com/jessevdk/go-flags v1.4.0/go.mod h1:4FA24M0QyGHXBuZZK/XkWh8h0e1EYbRYJSGM75WSRxI=
 github.com/jhump/protoreflect v1.6.1/go.mod h1:RZQ/lnuN+zqeRVpQigTwO6o0AJUkxbnSnpuG7toUTG4=
 github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af/go.mod h1:Nht3zPeWKUH0NzdCt2Blrr5ys8VGpn0CEB0cQHVjt7k=
@@ -441,6 +451,8 @@ github.com/juju/ratelimit v1.0.1/go.mod h1:qapgC/Gy+xNh9UxzV13HGGl/6UXNN+ct+vwSg
 github.com/julienschmidt/httprouter v1.2.0/go.mod h1:SYymIcj16QtmaHHD7aYtjjsJG7VTCxuUUipMqKk8s4w=
 github.com/kairos-io/kairos-sdk v0.3.2 h1:xPs6RKjVdMpv6N//iwkjeJHdieliWRCIJ5bNAJsHEMU=
 github.com/kairos-io/kairos-sdk v0.3.2/go.mod h1:EznuHrE6zGyUsVr1xYj7qYUFWCVKAjXLyKjDUzffME8=
+github.com/kairos-io/kairos-sdk v0.6.0 h1:A096lZVHE4rkvA5kG0Oss0085T0noUcf7AeppWGySR8=
+github.com/kairos-io/kairos-sdk v0.6.0/go.mod h1:7Y6Y/McniCyAJcmQfoTfKd09cwmwS40URaIVbJn8V2k=
 github.com/kairos-io/kcrypt v0.12.2 h1:+lr8FGS0AW6D5dWSmaR3+AobL1TBTnOFgCSYctKY+5I=
 github.com/kairos-io/kcrypt v0.12.2/go.mod h1:7SPiHzNMYl4MlxeB30s1YlHDYByTusu7u1mU5Nvicm0=
 github.com/kairos-io/tpm-helpers v0.0.0-20240123063624-f7a3fcc66199 h1:eXiZNiQfZDelYfTF733IxDOKGAKJqn0fF0kFY10QreU=
@@ -528,6 +540,8 @@ github.com/moby/sys/mountinfo v0.6.2 h1:BzJjoreD5BMFNmD9Rus6gdd1pLuecOFPt8wC+Vyg
 github.com/moby/sys/mountinfo v0.6.2/go.mod h1:IJb6JQeOklcdMU9F5xQ8ZALD+CUr5VlGpwtX+VE0rpI=
 github.com/moby/sys/sequential v0.5.0 h1:OPvI35Lzn9K04PBbCLW0g4LcFAJgHsvXsRyewg5lXtc=
 github.com/moby/sys/sequential v0.5.0/go.mod h1:tH2cOOs5V9MlPiXcQzRC+eEyab644PWKGRYaaV5ZZlo=
+github.com/moby/sys/userns v0.1.0 h1:tVLXkFOxVu9A64/yh59slHVv9ahO9UIev4JZusOLG/g=
+github.com/moby/sys/userns v0.1.0/go.mod h1:IHUYgu/kao6N8YZlp9Cf444ySSvCmDlmzUcYfDHOl28=
 github.com/moby/term v0.0.0-20221205130635-1aeaba878587 h1:HfkjXDfhgVaN5rmueG8cL8KKeFNecRCXFhaJ2qZ5SKA=
 github.com/moby/term v0.0.0-20221205130635-1aeaba878587/go.mod h1:8FzsFHVUBGZdbDsJw/ot+X+d5HLUbvklYLJ9uGfcI3Y=
 github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
@@ -546,6 +560,8 @@ github.com/mudler/go-processmanager v0.0.0-20230818213616-f204007f963c h1:CI5uGw
 github.com/mudler/go-processmanager v0.0.0-20230818213616-f204007f963c/go.mod h1:gY3wyrhkRySJtmtI/JPt4a2mKv48h/M9pEZIW+SjeC0=
 github.com/mudler/yip v1.9.4 h1:yaiPKWG5kt/DTNCf7ZGfyWdb1j5c06zYqWF3F+SVKsE=
 github.com/mudler/yip v1.9.4/go.mod h1:nqf8JFCq7a7rIkm7cSs+SOc8QbiyvVJ/xLbUw4GgzFs=
+github.com/mudler/yip v1.11.0 h1:h+npjzSKM9VbShHxa+ywWZzpGIolKvN/e2FOT+rxKkI=
+github.com/mudler/yip v1.11.0/go.mod h1:gwH7iGcr1Jimox2xKtN2AprEO00GzY7smvuycqCL7+Y=
 github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 h1:C3w9PqII01/Oq1c1nUAm88MOHcQC9l5mIlSMApZMrHA=
 github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822/go.mod h1:+n7T8mK8HuQTcFwEeznm/DIxMOiR9yIdICNftLE1DvQ=
 github.com/mwitkow/go-conntrack v0.0.0-20161129095857-cc309e4a2223/go.mod h1:qRWi+5nqEBWmkhHvq77mSJWrCKwh8bxhgT7d/eI7P4U=
@@ -578,6 +594,8 @@ github.com/onsi/gomega v1.10.3/go.mod h1:V9xEwhxec5O8UDM77eCW8vLymOMltsqPVYWrpDs
 github.com/onsi/gomega v1.16.0/go.mod h1:HnhC7FXeEQY45zxNK3PPoIUhzk/80Xly9PcubAlGdZY=
 github.com/onsi/gomega v1.34.1 h1:EUMJIKUjM8sKjYbtxQI9A4z2o+rruxnzNvpknOXie6k=
 github.com/onsi/gomega v1.34.1/go.mod h1:kU1QgUvBDLXBJq618Xvm2LUX6rSAfRaFRTcdOeDLwwY=
+github.com/onsi/gomega v1.34.2 h1:pNCwDkzrsv7MS9kpaQvVb1aVLahQXyJ/Tv5oAZMI3i8=
+github.com/onsi/gomega v1.34.2/go.mod h1:v1xfxRgk0KIsG+QOdm7p8UosrOzPYRo60fd3B/1Dukc=
 github.com/opencontainers/go-digest v1.0.0 h1:apOUWs51W5PlhuyGyz9FCeeBIOUDA/6nW8Oi/yOhh5U=
 github.com/opencontainers/go-digest v1.0.0/go.mod h1:0JzlMkj0TRzQZfJkVvzbP0HBR3IKzErnv2BNG4W4MAM=
 github.com/opencontainers/image-spec v1.1.0 h1:8SG7/vwALn54lVB/0yZ/MMwhFrPYtpEHQb2IpWsCzug=
